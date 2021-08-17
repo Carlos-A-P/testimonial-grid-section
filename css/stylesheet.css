@@ -1,0 +1,161 @@
+:root {
+	--Moderate-violet: hsl(263, 55%, 52%);
+	--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+	--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+	--White: hsl(0, 0%, 100%);
+	--Light-gray: hsl(0, 0%, 81%);
+	--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Barlow Semi Condensed", sans-serif;
+	background-color: var(--Light-grayish-blue);
+	font-size: 13px;
+	padding: 8rem 1.5rem;
+	color: white;
+	font-weight: 400;
+}
+
+.grid-wrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"c-1"
+		"c-2"
+		"c-3"
+		"c-4"
+		"c-5";
+	max-width: 400px;
+	gap: 25px;
+	margin: 0 auto;
+}
+
+.card {
+	padding: 1.6rem 30px 2rem;
+	border-radius: 8px;
+}
+
+.c-1 {
+	grid-area: c-1;
+	background-color: var(--Moderate-violet);
+	background-image: url(../images/bg-pattern-quotation.svg);
+	background-position: top 0 right 1.2rem;
+	background-repeat: no-repeat;
+}
+
+.c-2 {
+	grid-area: c-2;
+	background-color: var(--Very-dark-grayish-blue);
+}
+
+.c-3 {
+	grid-area: c-3;
+	background-color: white;
+	color: var(--Very-dark-grayish-blue);
+}
+
+.c-4 {
+	grid-area: c-4;
+	background-color: var(--Very-dark-blackish-blue);
+}
+
+.c-5 {
+	grid-area: c-5;
+	background-color: white;
+	color: var(--Very-dark-grayish-blue);
+}
+
+.avatar img {
+	border-radius: 50%;
+	width: 30px;
+}
+
+.c-1 .avatar img {
+	border: 2px solid rgba(181, 161, 214, 0.5);
+}
+
+.c-4 .avatar img {
+	border: 2px solid rgba(140, 84, 230, 0.5);
+}
+
+.profile {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+p.verified {
+	opacity: 0.5;
+}
+
+.card-header {
+	margin-bottom: 1rem;
+}
+
+.header {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.description {
+	opacity: 0.7;
+}
+
+footer {
+	margin-top: 4rem;
+	color: var(--Very-dark-grayish-blue);
+	font-size: 14px;
+}
+
+.attribution {
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1100px) {
+	.grid-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 275px;
+		grid-template-areas:
+			"c-1 c-1 c-2 c-5"
+			"c-3  c-4 c-4 c-5";
+		max-width: 1140px;
+		gap: 25px;
+		margin: 0 auto;
+	}
+
+	.card {
+		padding: 1.6rem 37px 2rem;
+		border-radius: 8px;
+	}
+
+	.card-header {
+		margin-bottom: 1.5rem;
+	}
+
+	.description {
+		opacity: 0.7;
+		line-height: 20px;
+	}
+
+	.c-1 {
+		background-position: top 0 right 5.2rem;
+	}
+
+	.c-3,
+	.c-4,
+	.c-5 {
+		padding-bottom: 1.5rem;
+	}
+}
