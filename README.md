@@ -1,6 +1,6 @@
 # Testimonials grid section
 
-- Live website -(https://cpwd-fylo-dark-theme-landing-page.netlify.app/#)
+- Live website -(https://cpwd-testimonial-grid-section.netlify.app/)
 
 ## Table of contents
 
