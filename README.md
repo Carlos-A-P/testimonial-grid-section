@@ -39,7 +39,7 @@ Users should be able to:
 
 This challenge tested my position skills. It helps me improve on grid layout.
 
-Here is some code that I wrote in order to complete this project
+- I used grid area templates and assigned grid areas to each card
 
 ```CSS
 	.grid-wrap {
@@ -54,10 +54,6 @@ Here is some code that I wrote in order to complete this project
 		margin: 0 auto;
 	}
 ```
-
-### Questions
-
-- N/A
 
 ### Useful resources
 
